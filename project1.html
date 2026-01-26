@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server on AWS - Daniel Younge</title>
+</head>
+<body>
+    <header>
+        <h1>Daniel Younge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="minecraft-aws-project.html">Minecraft AWS Server</a></li>
+                <li><a href="web-app-project.html">Task Manager App</a></li>
+            </ul>
+        </nav
+    </herder>
+
+    <main>
+        <artical>
+            <header>
+                <h2>Minecraft Server Deployment on AWS</h2>
+                <p>Cloud Infrastructure Project | Spring 2023</p>
+            </header>
+            
+            <figure>
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Minecraft gameplay with creative structures"
+                     width="800" height="450">
+                <figcaption>Multiplayer Minecraft gameplay hosted on AWS EC2 instance</figcaption>
+            </figure>
+
+            <section>
+                <h3>Project Overview</h3>
+                <p>Designed, deployed, and managed a scalable Minecraft gaming server on Amazon Web Services cloud infrastructure. The project focused on creating a reliable, cost-effective multiplayer gaming environment while learning cloud computing principles and system administration.</p>
+                
+                <p>The server supported up to 24 concurrent players with optimized performance and implemented automated systems for backups, monitoring, and cost control.</p>
+            </section>
+
+            <section>
+                <h3>Technical Implementation</h3>
+                <p>The server was built using the following AWS services and technologies:</p>
+                
+                <ul>
+                    <li><strong>AWS EC2</strong>: t3.xlarge instance (4 vCPUs, 16GB RAM) running Ubuntu Server 22.04</li>
+                    <li><strong>AWS S3</strong>: Automated daily world backups with 30-day retention</li>
+                    <li><strong>AWS Route 53</strong>: Custom DNS (minecraft.alexchen.tech) for easy server access</li>
+                    <li><strong>AWS CloudWatch</strong>: Performance monitoring and alerting</li>
+                    <li><strong>PaperMC</strong>: High-performance Minecraft server software</li>
+                    <li><strong>Bash Scripting</strong>: Automation for updates, backups, and maintenance</li>
+                </ul>
+                
+                <h4>Key Features Implemented:</h4>
+                <ul>
+                    <li>Automated daily backups to S3 with versioning enabled</li>
+                    <li>Scheduled instance shutdown during off-peak hours (12 AM - 4 PM) to reduce costs by 65%</li>
+                    <li>Custom performance monitoring dashboard using CloudWatch metrics</li>
+                    <li>Security hardening with minimal open ports (only 25565 for Minecraft)</li>
+                    <li>Player whitelist system for enhanced server security</li>
+                    <li>Dynamic resource monitoring with auto-alerts for high usage</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Challenges & Solutions</h3>
+                <dl>
+                    <dt>High Latency for Distant Players</dt>
+                    <dd>Implemented AWS CloudFront distribution for static assets and optimized network routing, reducing latency from 120ms to 85ms for cross-country players.</dd>
+                    
+                    <dt>Cost Management</dt>
+                    <dd>Created Lambda functions to automatically stop the instance during low-usage hours and implemented budget alerts, maintaining monthly costs under $45.</dd>
+                    
+                    <dt>World Data Corruption Risk</dt>
+                    <dd>Designed a robust backup system with daily snapshots and weekly full backups stored across multiple AWS regions for disaster recovery.</dd>
+                    
+                    <dt>Performance Optimization</dt>
+                    <dd>Tuned JVM arguments and implemented chunk pre-loading to reduce lag during peak player activity.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Skills Developed</h3>
+                <ul>
+                    <li><strong>Cloud Infrastructure Management</strong>: AWS EC2, S3, IAM, Route 53</li>
+                    <li><strong>Cost Optimization</strong>: Implementing auto-scaling and scheduled shutdowns</li>
+                    <li><strong>Linux Administration</strong>: Ubuntu server setup, maintenance, and security</li>
+                    <li><strong>Automation</strong>: Bash scripting for server management tasks</li>
+                    <li><strong>Networking</strong>: VPC configuration, security groups, DNS management</li>
+                    <li><strong>Monitoring</strong>: AWS CloudWatch setup and alert configuration</li>
+                    <li><strong>Backup Strategies</strong>: S3 lifecycle policies and disaster recovery planning</li>
+                    <li><strong>Performance Tuning</strong>: JVM optimization and server configuration</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Project Outcomes</h3>
+                <ul>
+                    <li>Successfully hosted an average of 15-20 concurrent players with 99.5% uptime</li>
+                    <li>Reduced monthly AWS costs from estimated $130 to $42 through optimization</li>
+                    <li>Implemented a complete monitoring and alerting system</li>
+                    <li>Created documentation for server setup and maintenance procedures</li>
+                    <li>Gained hands-on experience with enterprise cloud infrastructure</li>
+                </ul>
+            </section>
+
+            <footer>
+                <p><a href="index.html">← Return to Resume</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>AWS Cloud Project | Demonstrating Infrastructure as Service Implementation</p>
+    </footer>
+</body>
+</html>

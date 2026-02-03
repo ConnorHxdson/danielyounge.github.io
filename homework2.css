@@ -1,9 +1,91 @@
+/* Page background */
 body {
-  background-color: powderblue;
+    background-color: #c6dfec; /* light blue from screenshot */
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
 }
+
+/* Main page header */
 h1 {
-  color: blue;
+    text-align: center;
+    font-size: 56px;
+    margin: 30px 0 20px 0;
+    font-weight: bold;
 }
+
+/* Section headers */
+h2 {
+    font-size: 36px;
+    margin: 40px 0 20px 20px;
+}
+
+h3 {
+    font-size: 26px;
+    margin: 30px 0 10px 20px;
+}
+
+/* General paragraphs */
 p {
-  color: red;
+    margin: 10px 20px;
+    line-height: 1.5;
+}
+
+/* Second paragraph box */
+#paragraph2 {
+    width: 75%;
+    margin: 25px auto;
+    padding: 18px 22px;
+    border: 4px solid #4a8a1f; /* green border */
+    background-color: #ffffff;
+    line-height: 1.9;
+}
+
+/* Ordered list */
+ol {
+    margin-left: 40px;
+    list-style-type: decimal-leading-zero;
+}
+
+/* List item links */
+ol a {
+    color: #0000ee;
+}
+
+/* W3Schools link (different color) */
+a[href*="w3schools"] {
+    color: #800000; /* dark red */
+}
+
+/* Blue highlighted paragraphs */
+.blue {
+    background-color: #0a168a;
+    color: #ffffff;
+    padding: 15px 20px;
+    margin: 20px;
+    border: 1px solid #000000;
+}
+
+/* Table layout */
+table {
+    border-collapse: collapse;
+    margin: 15px 20px;
+    width: 70%;
+}
+
+/* Borders on all cells */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Table header */
+th {
+    background-color: #d9d9d9;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+/* Table cells */
+td {
+    background-color: #ffffff;
+    padding: 6px 10px;
 }

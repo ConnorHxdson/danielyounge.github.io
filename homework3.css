@@ -1,7 +1,8 @@
 /* Main page header */
 header {
-    position: fixed;
-    top: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 10px 16px;
     text-align: center;
     font-size: 56px;

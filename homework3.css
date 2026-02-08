@@ -1,13 +1,117 @@
-/* Main page header */
-header {
-    position: sticky;
-    top: 0;
-    padding: 10px 16px;
-    text-align: center;
-    font-size: 56px;
-    margin: 30px 0 20px 0;
-    font-weight: bold;
-    background-color: #0000FF;
-    line-height: 1.9;
+/*  RESET  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*  JUMP MENU  */
+#jumpMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    background: #d4a62a;
+    padding: 20px;
+}
+
+#jumpMenu h2 {
+    margin-bottom: 15px;
+}
+
+#jumpMenu a {
+    display: block;
+    margin: 10px 0;
+    color: blue;
+}
+
+/*  MAIN AREA OFFSET  */
+main {
+    margin-left: 15%;
+    padding-top: 120px; /* space for fixed header */
+}
+
+/*  HEADER  */
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    background: red;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*  HEADER NAV  */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*  PAGE TITLE  */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/*  ARTICLE GRID  */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*  INDIVIDUAL ARTICLES  */
+article {
+    width: 300px;
+    line-height: 1.4;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+/*  THANK YOU BOX  */
+#thanks {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #9bd2f5;
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #333;
+}
+
+/*  FOOTER  */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+}

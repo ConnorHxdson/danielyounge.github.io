@@ -36,7 +36,7 @@ main {
     padding-top: 170px; /* increased to clear both header sections */
 }
 
-/* ===== HEADER WRAPPER ===== */
+/*  HEADER WRAPPER  */
 header {
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@ header {
     z-index: 1000;
 }
 
-/* ===== RED TOP BAR ===== */
+/*  RED TOP BAR  */
 header p {
     background: red;
     color: black;
@@ -55,7 +55,7 @@ header p {
     padding: 20px 0;
 }
 
-/* ===== BLUE NAV BAR (SEPARATE SECTION) ===== */
+/*  BLUE NAV BAR (SEPARATE SECTION)  */
 header nav {
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ header nav {
     padding: 10px 0;
 }
 
-/* ===== NAV BUTTONS ===== */
+/*  NAV BUTTONS  */
 header button {
     background: blue;
     color: white;

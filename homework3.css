@@ -33,39 +33,44 @@ body {
 /*  MAIN AREA OFFSET  */
 main {
     margin-left: 15%;
-    padding-top: 120px; /* space for fixed header */
+    padding-top: 170px; /* increased to clear both header sections */
 }
 
-/*  HEADER  */
+/* ===== HEADER WRAPPER ===== */
 header {
     position: fixed;
     top: 0;
     left: 15%;
     width: 85%;
-    background: red;
-    text-align: center;
-    padding: 15px 0;
     z-index: 1000;
 }
 
+/* ===== RED TOP BAR ===== */
 header p {
+    background: red;
+    color: black;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/*  HEADER NAV  */
+/* ===== BLUE NAV BAR (SEPARATE SECTION) ===== */
 header nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    background: black;
+    padding: 10px 0;
 }
 
+/* ===== NAV BUTTONS ===== */
 header button {
     background: blue;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 30px;
+    font-size: 16px;
     cursor: pointer;
 }
 

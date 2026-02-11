@@ -105,14 +105,14 @@ article p:first-of-type::first-letter {
     font-size: 36px;
 }
 
-/* read more links */
-article a[href*="google"] {
+/* Target  Google links */
+a[href*="google"] {
     position: relative;
-    padding-right: 24px;
+    padding-right: 22px;
 }
 
-/* arrow icon after link */
-article a[href*="google"]::after {
+/* Arrow icon after the link */
+a[href*="google"]::after {
     content: "";
     position: absolute;
     right: 0;
@@ -120,8 +120,8 @@ article a[href*="google"]::after {
     width: 16px;
     height: 16px;
     background-image: url("arrowarrow.png");
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* ensure Read More text isnt affected by article hover */

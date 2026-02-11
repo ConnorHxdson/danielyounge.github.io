@@ -1,0 +1,138 @@
+/* general reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* navigation */
+nav {
+    width: 220px;
+    background: #0a0a0a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+nav button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #0b22ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #0014a8;
+}
+
+/* jump menu hidden by default */
+#jumpMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: #d9a925;
+}
+
+/* Show jump menu when hovering Recent Articles */
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li a {
+    display: block;
+    padding: 8px 12px;
+    color: blue;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#jumpMenu li a:hover {
+    background-color: #0b22ff;
+    color: white;
+}
+
+/* main layout */
+main {
+    margin-left: 220px;
+}
+
+header {
+    background: red;
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: "Times New Roman", serif;
+}
+
+/* articles */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px 40px 60px;
+}
+
+article {
+    color: #b3b3b3;
+    transition: color 2s, transform 2s;
+}
+
+/* Hover effect: darker + expand */
+article:hover {
+    color: #222;
+    transform: scale(1.08);
+}
+
+/* first letter styling  */
+article p:first-of-type::first-letter {
+    font-family: "Times New Roman", serif;
+    font-size: 36px;
+}
+
+/* read more links */
+article a[href*="google"] {
+    position: relative;
+    padding-right: 24px;
+}
+
+/* arrow icon after link */
+article a[href*="google"]::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url("arrowarrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ensure Read More text isnt affected by article hover */
+article p:last-child {
+    color: blue;
+}
+
+/* footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}

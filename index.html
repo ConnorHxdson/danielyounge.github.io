@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Younge - Resume</title>
+    <link rel="stylesheet" href="resumestyles.css">
 </head>
 <body>
-    <header>
-        <h1>Daniel Younge</h1>
-        <address>
-            <p>Email: <a href="mailto:da772108@ucf.edu">da772108@ucf.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/daniel-younge-6b2426268/" target="_blank">https://www.linkedin.com/in/daniel-younge-6b2426268/</a></p>
-        </address>
-        <nav>
+
+    <header class="site-header">
+        <div class="header-content">
+            <div class="name-section">
+                <h1>Daniel Younge</h1>
+                <p class="tagline">Information Technology Student</p>
+            </div>
+
+            <address class="contact-info">
+                <p>Email: <a href="mailto:da772108@ucf.edu">da772108@ucf.edu</a></p>
+                <p>LinkedIn: 
+                    <a href="https://www.linkedin.com/in/daniel-younge-6b2426268/" target="_blank">
+                        linkedin.com/in/daniel-younge
+                    </a>
+                </p>
+            </address>
+        </div>
+
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Resume</a></li>
                 <li><a href="project1.html">AWS Minecraft Server</a></li>
@@ -21,71 +34,93 @@
         </nav>
     </header>
 
-    <main>
-        <section id="objective">
+    <main class="container">
+
+        <section id="objective" class="card full-width">
             <h2>Professional Objective</h2>
-            <p>Information Technology student seeking an internship opportunity to apply software development skills and contribute to innovative projects. Passionate about creating efficient, user-friendly applications and expanding knowledge in full-stack development.</p>
+            <p>
+                Information Technology student seeking an internship opportunity 
+                to apply software development skills and contribute to innovative 
+                projects. Passionate about creating efficient, user-friendly 
+                applications and expanding knowledge in full-stack development.
+            </p>
         </section>
 
-        <section id="education">
+        <section id="education" class="card">
             <h2>Education</h2>
-            <article>
-                <h3>University of Central Florida</h3>
-                <p>Bachelor of Science in Information Technology</p>
-                <p>Expected Graduation: May 2026</p>
-                <p>GPA: 3.6/4.0</p>
-                <p>Relevant Coursework: Computer Science 1 and 2, Frontiers in Information Technology, Enterprise Computing</p>
-            </article>
+            <h3>University of Central Florida</h3>
+            <p><strong>Bachelor of Science in Information Technology</strong></p>
+            <p>Expected Graduation: May 2026</p>
+            <p>GPA: 3.6/4.0</p>
+            <p>
+                Relevant Coursework: Computer Science 1 & 2, 
+                Frontiers in IT, Enterprise Computing
+            </p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="card">
             <h2>Projects</h2>
+
             <article>
                 <h3><a href="project1.html">Student Database Management System</a></h3>
-                <p>Designed and implemented a relational database system for tracking student records, courses, and grades using MySQL and Python.</p>
+                <p>
+                    Designed and implemented a relational database system 
+                    using MySQL and Python to track student records, courses, and grades.
+                </p>
             </article>
+
             <article>
                 <h3><a href="project2.html">Task Management Web Application</a></h3>
-                <p>Developed a full-stack web application for personal task management with user authentication and real-time updates.</p>
+                <p>
+                    Developed a full-stack web application with authentication 
+                    and real-time updates using modern web technologies.
+                </p>
             </article>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Skills</h2>
-            <article>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>HTML/CSS</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Technologies & Tools</h3>
-                <ul>
-                    <li>Git & GitHub</li>
-                    <li>MySQL</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>VS Code</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Database Design</li>
-                    <li>RESTful API Development</li>
-                    <li>Agile Methodology</li>
-                    <li>Debugging & Testing</li>
-                </ul>
-            </article>
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>MySQL</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Database Design</li>
+                        <li>RESTful APIs</li>
+                        <li>Agile Methodology</li>
+                        <li>Debugging & Testing</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
     </main>
 
     <footer>
-        <p>This resume is hosted on GitHub Pages.</p>
+        <p>© 2026 Daniel Younge | Hosted on GitHub Pages</p>
     </footer>
+
 </body>
 </html>

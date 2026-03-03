@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Name or ID</h2>
+
+    <div class="search-area">
+        <input type="text" id="pokemonInput" placeholder="Enter name or ID">
+        <button id="findBtn">Find</button>
+    </div>
+
+    <div class="pokemon-display">
+
+        <img id="pokemonImage" src="" alt="Pokemon Image">
+
+        <audio id="pokemonAudio" controls></audio>
+
+        <div class="moves-container">
+            <select id="move1"></select>
+            <select id="move2"></select>
+            <select id="move3"></select>
+            <select id="move4"></select>
+        </div>
+
+        <button id="addBtn">Add to Team</button>
+
+    </div>
+
+    <hr>
+
+    <div id="teamContainer">
+        <!-- Team members will appear here -->
+    </div>
+
+</div>
+
+<script src="homework6.js"></script>
+
+</body>
+</html>

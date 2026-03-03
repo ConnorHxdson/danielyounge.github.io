@@ -69,9 +69,8 @@ function loadPokemon(data) {
         select.innerHTML = "";
     });
 
-    //Limit to first 40 moves for usability
-    const moves = data.moves.slice(0, 40);
-
+    const moves = data.moves;
+    
     moves.forEach(moveObj => {
         const moveName = moveObj.move.name;
 

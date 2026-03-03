@@ -1,0 +1,86 @@
+body {
+    background-color: #8fb6c4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 30px auto;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    border: 6px solid goldenrod;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.search-area input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-area button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pokemon-display {
+    margin-top: 20px;
+}
+
+#pokemonImage {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+audio {
+    margin-bottom: 15px;
+}
+
+.moves-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+select {
+    padding: 5px;
+}
+
+#addBtn {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#teamContainer {
+    margin-top: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.team-member img {
+    width: 80px;
+    height: 80px;
+}
+
+.team-member ul {
+    list-style-type: disc;
+    text-align: left;
+}
